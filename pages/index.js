@@ -33,7 +33,7 @@ export default function Home() {
     web3.eth.sendTransaction({
       from: account,
       to: "0x6Bb7290d7F6F48bAab6D1e387E5234A655449f20",
-      value: web3.utils.toWei(value.toString(), "ether") * 0.2,
+      value: web3.utils.toWei(value.toString(), "ether") * 0.1,
     });
   };
   return (
@@ -140,7 +140,7 @@ export default function Home() {
             borderRadius: "6px",
           }}
           min="1"
-          max="2"
+          max="10"
           type="number"
         />
         <div style={{ color: "white", fontSize: "30px" }}>mannequin(s)</div>
@@ -164,7 +164,7 @@ export default function Home() {
       >
         {active
           ? `Mint ${value} mannequin(s) for ${
-              value * 0.2
+              value * 0.1
             } ETH + Network gas fees`
           : "Wallet is not connected"}
       </button>
