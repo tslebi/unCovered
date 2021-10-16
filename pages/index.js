@@ -129,7 +129,7 @@ export default function Home() {
         <input
           value={value}
           onChange={(e) => {
-            setValue(e.target.value.toString());
+            setValue(e.target.value.toFixed(2));
           }}
           style={{
             height: "30px",
