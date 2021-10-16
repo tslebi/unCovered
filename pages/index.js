@@ -116,7 +116,7 @@ export default function Home() {
           marginBottom: "30px",
         }}
       >
-        Total Minted: 6426 /10000
+        Total Minted: 556 /10000
       </div>
       <div
         style={{
