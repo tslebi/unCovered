@@ -164,7 +164,7 @@ export default function Home() {
       >
         {active
           ? `Mint ${value} mannequin(s) for ${
-              value * 0.1
+                (value * 0.1).toFixed(1)
             } ETH + Network gas fees`
           : "Wallet is not connected"}
       </button>
